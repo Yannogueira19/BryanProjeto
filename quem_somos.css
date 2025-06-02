@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    .top-bar {  /* serve para criar a parte laranja do cabeçalho*/
+      background-color: #192230;
+      width: 100%;  /* largura da parte laranja do cabecalho*/
+    }
+    
+    .top-section { /* define a parte de cima da barra, a parte, onde fica as redes sociais*/
+      display: flex; /* sereve para deixar q a outra ta mova os itens, sem ela não dá*/
+      justify-content: flex-end;
+      padding: 8px 20px 0 20px;/* serve para colocar um espaço entre elas*/
+    }
+    
+    .social-icons {
+      display: flex;
+      align-items: center; /* alinha ao centro*/
+      gap: 10px; /* espaço entra as redes sociais*/
+    }
+    
+    .social-icons i,
+.search-icon i {
+  color: #ffcd00;
+}
+    
+    .lang {
+      color: white;/* a cor desse icones*/
+      font-size: 14px;/* tamanho da fonte desse icones*/
+      margin-left: 5px; /* da um espaço entre os icones de do pt e en*/
+    }
+    
+    .search-icon i { /* coloca o icone de pesquisa (lupa)*/
+      color: #ffcd00;
+      font-size: 16px;
+      margin-left: 8px;/* espaço a esqueda*/
+    }
+    
+    .bottom-section {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 10px 20px 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .logo img {
+      height: 50px; /* tamanho do da imagem logo*/
+    }
+    
+    .menu ul {
+      display: flex; /* sem esse diplay flex não da para mexer e movimentar o resto*/
+      list-style: none ; /* deixa sem os pontos */
+      gap: 20px; /* coloca um espaço entre os menu*/
+    }
+    
+    .menu ul li {
+      position: relative;
+    }
+    
+    .menu ul li:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: -10px;
+      top: 0;
+      height: 100%;
+      width: 1px;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .menu a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
+    
+    .menu a:hover {
+  background-color: #3d474e;
+}
+
+    .dropdown {
+      position: relative;
+    }
+    
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #192230;
+      padding: 10px 0;
+      min-width: 160px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      z-index: 999;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .dropdown:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .dropdown-menu li {
+      list-style: none;
+    }
+    
+    .dropdown-menu a {
+      display: block;
+      padding: 8px 16px;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background-color 0.3s;
+    }
+    
+    .dropdown-menu a:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+
+
+
+    /*parte final*/
+
+    .iniciativas {
+    padding: 60px 40px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .iniciativas h2 {
+    font-size: 2rem;
+    color: #f5a300; /* amarelo destaque */
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  
+  .logos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .logos-grid img {
+    max-width: 160px;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*parte final*/
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Newsletter laranja */
+  .newsletter {
+    background: url('imagens/2.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 60px 20px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+  }
+  
+  .newsletter-content {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .newsletter h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 0 0 10px;
+  }
+  
+  .newsletter p {
+    margin: 0 0 20px;
+    font-size: 1.1rem;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .newsletter-form input {
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .newsletter-form button {
+   background-color: #ffcd00; 
+   color: #192230;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+ 
+  
+  /* Rodapé branco */
+  .footer {
+     padding: 40px 20px;
+    	background-color: #2c2f38;
+       border-top: 4px solid #ffcd00; 
+       color: #ffffff;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .footer-logo img {
+    width: 100px;
+    position: absolute;/*deixa a imagem livre para ser movida */
+    left: 30px;/*deixa um espaco entre a esquerda*/
+    
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 60px;
+    flex: 1;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+   color: #ffcd00;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .footer-social {
+    max-width: 220px;
+  }
+   
+  .footer-social h3 {
+   margin-bottom: 10px;
+   display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ffcd00;
+     color: #ffffff;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+   color: #ffcd00;  
+    font-size: 1.4rem;
+  }
+  
+  

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Observatório do Clima</title>
+  <link rel="stylesheet" href="styler.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+
+  <header class="top-bar">
+    <div class="top-section">
+      <div class="social-icons">
+        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+        <span class="lang">PT</span>
+        <span class="lang">EN</span>
+        <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+      </div>
+    </div>
+    <div class="bottom-section">
+      <div class="logo">
+        <img src="imagens/logo1.PNG" alt="Logo OC" />
+      </div>
+      
+      <nav class="menu">
+        <ul>
+          <li class="dropdown">
+            <a href="#">Comprar</a>
+          <ul class="dropdown-menu">
+            <li><a href="carros_usados.html">Carros usados</a></li>
+            <li><a href="carros_novos.html">Carros novos </a></li>
+            <li><a href="motos_usadas.html">Motos usadas</a></li>
+            <li><a href="motos_novas.html">Motos novas</a></li>
+            <li><a href="#">Variádos</a></li>
+          </ul>
+          </li>
+          
+          <li class="dropdown">
+            <a href="#">Financiamentos</a>
+            <ul class="dropdown-menu">
+              <li><a href="financiamento_veiculos.html">Financiamentos de veículos</a></li>
+              <li><a href="emprestimo_veiculo.html">Empréstimo com garantia de veículo</a></li>
+              
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">Notícias</a>
+            <ul class="dropdown-menu">
+              <li><a href="noticias_principais.html">Notícias automotivas</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">            
+            <a href="#">Publicações</a>
+            
+
+          <li class="dropdown">            
+            <a href="Seguro.html">Seguro</a>
+            
+
+          <li class="dropdown">            
+            <a href="#">Termos jurídicos</a>
+           
+
+          <li class="dropdown">            
+            <a href="#">Contato</a>
+           
+
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+
+
+  <div class="carousel">
+    <div class="carousel-slide active" style="background-image: url('imagens/1.jpg');">
+      <div class="carousel-text">
+        <span class="tag">#PRESS RELEASE</span>
+        <h2>Fiat TRIS é um caminhão elétrico de três rodas e menor que um 500 </h2>
+        <p>Veículo comercial tem apenas 12 cv de potência e autonomia de 90 km, mas é feito para uso bem específico</p>
+      </div>
+    </div>
+    <div class="carousel-slide" style="background-image: url('imagens/2.jpg');">
+      <div class="carousel-text">
+        <span class="tag">#PRESS RELEASE</span>
+        <h2>Nissan Sentra pode mudar produção do México para os EUA e prejudicar o Brasil </h2>
+        <p>Produção pode ser transferida para evitar as tarifas nos EUA, porém vai passar a pagar 35% de imposto de importação para entrar no Brasil</p>
+      </div>
+    </div>
+    <div class="carousel-slide" style="background-image: url('imagens/3.jpg');">
+      <div class="carousel-text">
+        <span class="tag">#PRESS RELEASE</span>
+        <h2>VW dá desconto de até R$ 20.000 no Nivus Highline à espera do Tera</h2>
+        <p>SUV compacto tem condição para ser vendido por R$ 139.990, preço esperado para a versão mais completa do Volkswagen Tera.</p>
+      </div>
+    </div>
+    <button class="prev" onclick="prevSlide()">&#10094;</button>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
+  </div>
+
+  <script src="carrocel.js"></script>
+
+
+
+<!-- Carrossel de Membros -->
+<section class="carousel-members">
+    <button class="member-prev" onclick="prevMemberSlide()">&#10094;</button>
+  
+    <div class="member-wrapper">
+      <div class="member-slide-track">
+        <img src="imagens/checrolet.png" alt="Membro 1" >
+        <img src="imagens/logo carro1.png" alt="Membro 2">
+        <img src="imagens/mercedes.webp" alt="Membro 3">
+        <img src="imagens/nissa.png" alt="Membro 4">
+        <img src="logos/logo5.png" alt="Membro 5">
+        <img src="logos/logo6.png" alt="Membro 6">
+        <img src="logos/logo7.png" alt="Membro 7">
+      </div>
+    </div>
+  
+    <button class="member-next" onclick="nextMemberSlide()">&#10095;</button>
+  
+    <p class="members-link">Conheça nossos membros &rarr;</p>
+  </section>
+
+<BR><BR><BR><BR>
+
+
+
+
+ <section class="noticias-section">
+  <div class="noticia-card">
+    <span class="tag verde">NOTÍCIA</span>
+    <a href="noticias.html">
+      <img src="imagens/BMW 4.webp" alt="BMW">
+      <h3>BMW M2 CS 2026 tem 523 cv e está ainda mais agressivo</h3>
+    </a>
+    <p>O M2 ainda mantém a tração traseira pura [...]</p>
+  </div>
+
+  <div class="noticia-card">
+    <span class="tag amarelo">#NOTÍCIAS</span>
+    <a href="noticias2.html">
+      <img src="imagens/BMW 5.webp" alt="BYD">
+      <h3>BYD confirma data de início da produção de automóveis no Brasil</h3>
+    </a>
+    <p>A BYD confirmou oficialmente a data de início da montagem [...]</p>
+  </div>
+
+  <div class="noticia-card">
+    <span class="tag amarelo">#NOTÍCIAS</span>
+    <a href="noticias3.html">
+      <img src="imagens/BYD TESTEEE 4.webp" alt="Ram V8">
+      <h3>Ram faz postagem misteriosa e sugere retorno do V8 Hemi em junho</h3>
+    </a>
+    <p>Após saída de Tavares, RAM promete grande anúncio em 8 de junho [...]</p>
+  </div>
+</section>
+
+<section class="noticias-section">
+  <div class="noticia-card">
+    <span class="tag verde">#PRESS RELEASE</span>
+    <a href="noticias4.html">
+      <img src="imagens/CARRO NOVO.webp" alt="Carplay">
+      <h3>Depois do Carplay Ultra, Android Auto também ganha novidades</h3>
+    </a>
+    <p>Big tech atualiza Android Auto com vídeo, navegação web [...]</p>
+  </div>
+
+  <div class="noticia-card">
+    <span class="tag amarelo">#NOTÍCIAS</span>
+    <a href="noticias5.html">
+      <img src="imagens/HONDA.webp" alt="Honda">
+      <h3>Honda anuncia preços de Hornet e NX500 para o Brasil</h3>
+    </a>
+    <p>Esportiva e aventureira chegam em junho com valores competitivos…</p>
+  </div>
+
+  <div class="noticia-card">
+    <span class="tag amarelo">#NOTÍCIAS</span>
+    <a href="noticias6.html" target=" blank">
+      <img src="imagens/MOTO TOP.webp" alt="Moto Morini">
+      <h3>Moto Morini chega ao Brasil com 3 motos e preços partindo de R$ 45.990</h3>
+    </a>
+    <p>Marca de origem italiana oferecerá as linhas X-Cape, Seimezzo e Calibro…</p>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+ <section class="iniciativas">
+    <h2>Nossos parceiros</h2>
+    <div class="logos-grid">
+      <img src="imagens/pngtree-car-logo-design-template-vector-picture-image_3605888.png" alt="SEEG Brasil">
+      <img src="imagens/png-transparent-chevrolet-silverado-car-general-motors-chevrolet-corvette-chevrolet-logo-file-angle-truck-material.png" alt="FAKEBOOK.eco">
+      <img src="imagens/design-de-logotipo-de-servico-de-carro_23-2149750702.avif " alt="Gênero e Justiça Climática">
+      <img src="imagens/1e0a3a68eb3245aacaf4a40b10e9498b.jpg" alt="Central da COP">
+      <img src="imagens/imagem-da-empresa-automóvel-e-do-logotipo-106178718.webp" alt="Clima e Oceano">
+      <img src="imagens/fb1fcc1b77879c9d956ca27d69a9dcce.jpg" alt="Monitor 2045">
+      <img src="imagens/png-transparent-volkswagen-group-car-logo-volkswagen-car-logo-brand-emblem-trademark-volkswagen.png" alt="Será Que Vai Chover?">
+    </div>
+  </section>
+
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="newsletter-content">
+        <h2>Cuidados no trânsito.</h2>
+        <p>Assine nossa Newsletter. Informe seu e-mail.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Email" />
+          <button>Cadastrar</button>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Rodapé -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          
+           <a href="index.html"><img src="imagens/logo1.PNG" alt="Logo OC" height="75"width="75" />
+        </div>
+  
+        <div class="footer-links">
+          <ul>
+            <li><a href="quem_somos.html">Quem somos</a></li>
+            <li><a href="nossa_historia.html">Nossa história</a></li>
+            <li><a href="nossos_membros.html">Nossos membros</a></li>
+            <li><a href="nossa_equipe.html">Nossa equipe</a></li>
+          </ul>
+  
+          <ul>
+            <li><a href="noticias_principais.html">Notícias</a></li>
+            <li><a href="#">Imprensa</a></li>
+            <li><a href="#">Publicações</a></li>
+            <li><a href="#">Atuação Jurídica</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-social">
+          <h3>Redes sociais</h3>
+
+          <div class="social-icons">
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  <!--PARTE LARANJA, CABEÇALHO-->
+
+        
+      
+    
+    </div>
+  </header>
+  
+
+</body>
+</html>
