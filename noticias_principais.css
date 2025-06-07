@@ -5,9 +5,12 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
 }
+
 
 .top-bar {
   /* serve para criar a parte laranja do cabeçalho*/
@@ -156,12 +159,6 @@ body {
 
 
 
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-}
 
 .noticias-section {
   display: flex;
@@ -289,10 +286,7 @@ body {
 
 /*parte final*/
 
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-}
+
 
 /* Newsletter laranja */
 .newsletter {

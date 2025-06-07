@@ -157,7 +157,88 @@ body {
 }
 
 /*IAMGENS */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
 
+.termos {
+  background: #fff;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  border-left: 6px solid #ffcd00;
+}
+
+.termos h1 {
+  font-size: 28px;
+  color: #1e1e1e;
+  margin-bottom: 10px;
+}
+
+.termos h3 {
+  font-size: 22px;
+  color: #f96d00;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.termos h3::before {
+  content: "📌";
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.termos p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.termos ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.termos li {
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.termos li::before {
+  content: "✔";
+  color: #28a745;
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 600px) {
+  .termos {
+    margin: 20px 15px;
+    padding: 20px;
+  }
+
+  .termos h1 {
+    font-size: 22px;
+  }
+
+  .termos h3 {
+    font-size: 18px;
+  }
+
+  .termos p,
+  .termos li {
+    font-size: 14px;
+  }
+}
 
 /* daqui pra cima cabeçalho*/
 /* fianl */
@@ -286,10 +367,12 @@ body {
 }
 
 .footer-logo img {
-  width: 100px;
+  width: 150px;
+
   position: absolute;
+  top: 4140px;
   /*deixa a imagem livre para ser movida */
-  left: 30px;
+  left: 70px;
   /*deixa um espaco entre a esquerda*/
 
 }

@@ -129,9 +129,99 @@
     .dropdown-menu a:hover {
       background-color: rgba(255, 255, 255, 0.15);
     }
+.bloco_historia {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  gap: 40px;
+  flex-wrap: wrap;
+  font-family: 'Segoe UI', sans-serif;
+}
 
+.lado_esquerdo {
+  flex: 1;
+  max-width: 350px;
+}
 
-    /* daqui pra cima é o cabeçalho*/
+.imagem_texto {
+  margin-bottom: 30px;
+}
+
+.imagem_texto img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.legenda {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.destaque {
+  background-color: #d9230f;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.imagem_texto p {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.lado_direito {
+  flex: 2;
+  min-width: 300px;
+}
+
+.nossa_historia {
+  padding: 30px;
+  background-color: #fff;
+  border-left: 8px solid #d9230f;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  color: #2c2c2c;
+  line-height: 1.7;
+}
+
+.nossa_historia h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.nossa_historia p {
+  font-size: 1.05rem;
+  text-align: justify;
+  white-space: pre-line;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .bloco_historia {
+    flex-direction: column;
+  }
+
+  .lado_esquerdo, .lado_direito {
+    max-width: 100%;
+  }
+
+  .nossa_historia {
+    padding: 20px;
+  }
+
+  .nossa_historia h1 {
+    font-size: 1.5rem;
+  }
+
+  .nossa_historia p {
+    font-size: 1rem;
+  }
+}
+
 
     /* daqui pra baixo é o final*/
 
