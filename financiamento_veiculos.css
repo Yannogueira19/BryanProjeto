@@ -168,6 +168,8 @@ body {
   display: block;
 }
 
+
+
 .simulacao {
   display: flex;
   justify-content: space-between;
@@ -202,7 +204,6 @@ body {
   margin-bottom: 25px;
   color: #555;
 }
-
 .botao-simular {
   display: inline-block;
   background-color: #05334b;
@@ -213,11 +214,9 @@ body {
   border-radius: 8px;
   transition: background 0.3s;
 }
-
 .botao-simular:hover {
   background-color: #008ed1;
 }
-
 .condicoes {
   margin-top: 20px;
   font-size: 12px;
@@ -226,8 +225,7 @@ body {
 
 .simulacao-img img {
   max-width: 100%;
-  height: auto;
-  
+  height: auto; 
 }
 
 
@@ -303,23 +301,19 @@ body {
   border-top: 2px solid #002b55;
   margin: 20px 0;
 }
-
 .beneficio h4 {
   font-size: 18px;
   color: #333;
   font-weight: bold;
   margin-bottom: 10px;
 }
-
 .beneficio p {
   font-size: 15px;
   color: #555;
 }
-
 .btn-simulador {
   margin-top: 40px;
 }
-
 .btn-simulador a {
  background-color: #05334b;
   color: white;
@@ -329,14 +323,9 @@ body {
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
-
 .btn-simulador a:hover {
   background-color: #0091d8;
 }
-
-
-
-
 
 
 
@@ -428,7 +417,6 @@ body {
   margin-top: auto;
 }
 
-
 /*4 parte */
 
 * {
@@ -453,26 +441,22 @@ body {
   gap: 60px;
   flex-wrap: wrap;
 }
-
 .simulacao-imagem img {
   width: 100%;
   max-width: 500px;
   border-radius: 16px;
   object-fit: cover;
 }
-
 .simulacao-texto {
   flex: 1;
   min-width: 300px;
 }
-
 .simulacao-texto h2 {
   font-size: 28px;
   color: #1a1a1a;
   margin-bottom: 20px;
   font-weight: 700;
 }
-
 .simulacao-texto p {
   font-size: 16px;
   margin-bottom: 20px;
@@ -588,12 +572,13 @@ body {
 }
 
 .footer-logo img {
-  width: 100px;
+  width: 150px;
   position: absolute;
   /*deixa a imagem livre para ser movida */
-  left: 30px;
-  /*deixa um espaco entre a esquerda*/
+  left: 75px;
 
+  /*deixa um espaco entre a esquerda*/
+  top: 4128px;
 }
 
 .footer-links {
@@ -636,4 +621,200 @@ body {
 .social-icons a {
   color: #ffcd00;
   font-size: 1.4rem;
+}
+
+
+/* === RESPONSIVIDADE === */
+@media (max-width: 1024px) {
+  .top-section {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  .bottom-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+   .menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .simulacao {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .simulacao-texto,
+  .simulacao-img {
+    max-width: 100%;
+  }
+
+  .beneficios-lista {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .vantagens {
+    flex-direction: column;
+  }
+
+  .vantagens-imagem,
+  .vantagens-texto {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .simulacao-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .logos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-logo img {
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .simulacao-texto h2,
+  .vantagens-texto h2,
+  .simulacao-texto h2 {
+    font-size: 22px;
+  }
+
+  .simulacao-texto p,
+  .vantagens-texto p {
+    font-size: 14px;
+  }
+
+  .botao-simular,
+  .btn-simulador a {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .beneficio h4 {
+    font-size: 16px;
+  }
+
+  .beneficio p {
+    font-size: 13px;
+  }
+
+  .destaque .valor {
+    font-size: 28px;
+  }
+
+  .iniciativas h2 {
+    font-size: 1.6rem;
+  }
+
+  .newsletter h2 {
+    font-size: 1.8rem;
+  }
+
+  .newsletter p {
+    font-size: 1rem;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+  }
+
+  .social-icons a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-section {
+    padding: 10px;
+  }
+
+  .simulacao-texto h2,
+  .vantagens-texto h2 {
+    font-size: 20px;
+  }
+
+  .simulacao-texto p,
+  .vantagens-texto p {
+    font-size: 13px;
+  }
+
+  .botao-simular,
+  .btn-simulador a {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  .beneficio {
+    max-width: 100%;
+  }
+
+  .destaque .valor {
+    font-size: 24px;
+  }
+
+  .vantagens-destaques {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .newsletter h2 {
+    font-size: 1.5rem;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .footer-social h3 {
+    font-size: 16px;
+  }
+
+  .logos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-icons {
+    gap: 10px;
+  }
 }

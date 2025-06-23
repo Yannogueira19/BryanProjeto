@@ -219,14 +219,6 @@
 
 
 
-
-
-
-
-
-
-
-
 /*iniciaticas */
 
 .iniciativas {
@@ -331,10 +323,10 @@
   }
   
   .footer-logo img {
-    width: 100px;
+    width: 150px;
     position: absolute;/*deixa a imagem livre para ser movida */
-    left: 30px;/*deixa um espaco entre a esquerda*/
-    
+    left: 75px;/*deixa um espaco entre a esquerda*/
+    top: 6889px;
   }
   
   .footer-links {
@@ -379,4 +371,160 @@
     font-size: 1.4rem;
   }
   
-  
+  /* ==========================
+   RESPONSIVIDADE COMPLETA
+========================== */
+
+/* Tela até 1024px (Tablet e notebooks pequenos) */
+@media (max-width: 1024px) {
+    /* Topo e Menu */
+    .top-section {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+    }
+
+    .bottom-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+   .menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+    /* Banner */
+    .banner h1 {
+        font-size: 32px;
+        left: 20px;
+        bottom: 60px;
+        padding: 8px 16px;
+    }
+
+    /* Menu 1 */
+    .menu1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Logos */
+    .logos-grid, .logos-grid1 {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+
+    /* Newsletter */
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 100%;
+    }
+
+    /* Rodapé */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer-logo img {
+        position: static;
+        margin-bottom: 20px;
+    }
+}
+
+/* Tela até 768px (Celulares grandes e tablets) */
+@media (max-width: 768px) {
+    /* Cabeçalho */
+    .menu a {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+
+    /* Banner */
+    .banner h1 {
+        font-size: 24px;
+        bottom: 40px;
+        padding: 6px 12px;
+    }
+
+    /* Menu 1 */
+    .menu1 a {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* Logos */
+    .logos-grid, .logos-grid1 {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+
+    /* Newsletter */
+    .newsletter h2 {
+        font-size: 1.8rem;
+    }
+
+    .newsletter p {
+        font-size: 1rem;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    /* Rodapé */
+    .footer-links a {
+        font-size: 14px;
+    }
+
+    .footer-social h3 {
+        font-size: 16px;
+    }
+
+    .social-icons a {
+        font-size: 1.2rem;
+    }
+}
+
+/* Tela até 480px (Celulares pequenos) */
+@media (max-width: 480px) {
+    /* Banner */
+    .banner h1 {
+        font-size: 18px;
+        bottom: 30px;
+        padding: 5px 10px;
+    }
+
+    /* Logos */
+    .logos-grid, .logos-grid1 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Newsletter */
+    .newsletter h2 {
+        font-size: 1.5rem;
+    }
+
+    .newsletter p {
+        font-size: 0.9rem;
+    }
+
+    /* Rodapé */
+    .footer-links {
+        gap: 20px;
+    }
+}

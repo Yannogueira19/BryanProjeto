@@ -140,7 +140,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 /* Seção principal */
 .seguro-section {
   background-color: #05475d;
@@ -152,7 +151,6 @@
   color: #fff;
   font-family: 'Arial', sans-serif;
 }
-
 /* Container flexível */
 .container {
   max-width: 1200px;
@@ -162,7 +160,6 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 /* Texto */
 .text-content {
   max-width: 600px;
@@ -204,18 +201,14 @@
   flex-wrap: wrap;
   gap: 20px;
 }
-
 .cta-box p {
   font-size: 18px;
   font-weight: 600;
   flex: 1;
 }
-
 .strong {
   font-weight: bold;
 }
-
-/* Botão */
 .cta-button {
   background-color: #fcb900;
   color: #000;
@@ -226,27 +219,22 @@
   text-decoration: none;
   transition: background 0.2s ease;
 }
-
 .cta-button:hover {
   background-color: #e5a700;
 }
-
 /* Responsivo */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
     text-align: center;
   }
-
   .image-content {
     margin-top: 20px;
   }
-
   .cta-box {
     flex-direction: column;
     text-align: center;
   }
-
   .cta-button {
     width: 100%;
     text-align: center;
@@ -294,27 +282,23 @@
   gap: 40px;
   flex-wrap: wrap;
 }
-
 .vantagem {
   flex: 1;
   min-width: 260px;
   max-width: 340px;
   text-align: center;
 }
-
 .vantagem img {
   max-width: 100px;
   
   margin-bottom: 20px;
 }
-
 .vantagem h3 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
   color: #1f2a37;
 }
-
 .vantagem p {
   font-size: 16px;
   color: #4b5563;
@@ -1206,9 +1190,10 @@ body {
   }
   
   .footer-logo img {
-    width: 100px;
+    width: 150px;
     position: absolute;/*deixa a imagem livre para ser movida */
-    left: 30px;/*deixa um espaco entre a esquerda*/
+    left: 70px;
+    top: 7460px;/*deixa um espaco entre a esquerda*/
     
   }
   
@@ -1254,4 +1239,207 @@ body {
     font-size: 1.4rem;
   }
   
+  /* ==========================
+   RESPONSIVIDADE COMPLETA
+========================== */
+
+/* Notebooks pequenos e tablets grandes */
+@media (max-width: 1024px) {
+
+  /* Topo */
+  .top-section {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  .bottom-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+    .menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+
+  /* Iniciativas */
+  .logos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  /* Newsletter */
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+  }
+
+  /* Rodapé */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-logo img {
+    position: static;
+    margin-bottom: 20px;
+  }
+}
+
+/* Tablets e celulares grandes */
+@media (max-width: 768px) {
+
+  /* Menu */
+  .menu a {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+
+  /* Iniciativas */
+  .logos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  /* Newsletter */
+  .newsletter h2 {
+    font-size: 1.8rem;
+  }
+
+  .newsletter p {
+    font-size: 1rem;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  /* Rodapé */
+  .footer-links a {
+    font-size: 14px;
+  }
+
+  .footer-social h3 {
+    font-size: 16px;
+  }
+
+  .social-icons a {
+    font-size: 1.2rem;
+  }
+
+  /* Container principal flex para se adaptar */
+  .container,
+  .container-vantagens,
+  .container-coberturas,
+  .container-assistencias,
+  .container-bonus,
+  .container-yousers,
+  .container-passos,
+  .container-pagamento,
+  .container-alterar,
+  .cards-container,
+  .app-section,
+  .servico-blocos,
+  .simulador-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Ajuste em botões para largura total */
+  .cta-button,
+  .botao-bonus,
+  .botao-cotar a,
+  .simulador-btn,
+  .botao-app {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Cards */
+  .card,
+  .bloco,
+  .card-yousers,
+  .passo {
+    max-width: 100%;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+
+  /* Topo */
+  .top-section {
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Iniciativas */
+  .logos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Newsletter */
+  .newsletter h2 {
+    font-size: 1.5rem;
+  }
+
+  .newsletter p {
+    font-size: 0.9rem;
+  }
+
+  /* Rodapé */
+  .footer-links {
+    gap: 20px;
+  }
+
+  /* Ajuste de fonte geral para celular */
+  body,
+  .menu a,
+  .vantagens-section h2,
+  .vantagem h3,
+  .vantagem p,
+  .coberturas-section h2,
+  .assistencias-section h2,
+  .assistencias-section .descricao,
+  .classe-bonus h2,
+  .classe-bonus p,
+  .clube-yousers h2,
+  .clube-yousers p,
+  .passo p,
+  .servicos h2,
+  .servicos .subtitulo,
+  .bloco h3,
+  .bloco p,
+  .app-texto h2,
+  .app-texto p,
+  .modelos-section h2,
+  .card h3,
+  .card p,
+  .texto-pagamento h2,
+  .texto-pagamento p,
+  .texto-alterar h2,
+  .texto-alterar p,
+  .newsletter h2,
+  .newsletter p {
+    font-size: smaller;
+  }
+}
+
   

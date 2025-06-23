@@ -181,12 +181,6 @@ header {
 
 
 
-
-
-
-
-
-
 .resumo p {
     max-width: 800px;
     text-align: justify;
@@ -211,20 +205,6 @@ header {
     border-radius: 5px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -384,4 +364,200 @@ body {
 .social-icons a {
   color: #ffcd00;
   font-size: 1.4rem;
+}
+
+/* ==========================
+   RESPONSIVIDADE COMPLETA
+========================== */
+
+/* Tablets e notebooks pequenos */
+@media (max-width: 1024px) {
+
+  /* Topo */
+  .top-section {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  .bottom-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+ .menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* Introdução */
+  .introduzir h1 {
+    font-size: 1.8rem;
+  }
+
+  .introduzir p {
+    font-size: 1rem;
+  }
+
+  /* Resumo */
+  .resumo p {
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  /* Galeria */
+  .car-gallery img {
+    width: 90%;
+    height: auto;
+  }
+
+  /* Iniciativas */
+  .logos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  /* Newsletter */
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+  }
+
+  /* Rodapé */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-logo img {
+    position: static;
+    margin-bottom: 20px;
+  }
+}
+
+/* Celulares grandes e tablets pequenos */
+@media (max-width: 768px) {
+
+  /* Menu */
+  .menu a {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+
+  /* Introdução */
+  .introduzir h1 {
+    font-size: 1.5rem;
+  }
+
+  .introduzir p {
+    font-size: 0.9rem;
+  }
+
+  /* Resumo */
+  .resumo p {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  /* Galeria */
+  .car-gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Iniciativas */
+  .logos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  /* Newsletter */
+  .newsletter h2 {
+    font-size: 1.8rem;
+  }
+
+  .newsletter p {
+    font-size: 1rem;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  /* Rodapé */
+  .footer-links a {
+    font-size: 14px;
+  }
+
+  .footer-social h3 {
+    font-size: 16px;
+  }
+
+  .social-icons a {
+    font-size: 1.2rem;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+
+  /* Topo */
+  .top-section {
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Introdução */
+  .introduzir h1 {
+    font-size: 1.2rem;
+  }
+
+  .introduzir p {
+    font-size: 0.85rem;
+  }
+
+  /* Resumo */
+  .resumo p {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  /* Galeria */
+  .car-gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Iniciativas */
+  .logos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Newsletter */
+  .newsletter h2 {
+    font-size: 1.5rem;
+  }
+
+  .newsletter p {
+    font-size: 0.9rem;
+  }
+
+  /* Rodapé */
+  .footer-links {
+    gap: 20px;
+  }
 }

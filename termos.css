@@ -151,10 +151,7 @@ body {
   width: 100%;
   display: block;
 }
-.titulo{
-  text-align: center;
-  font-size: 30px;
-}
+
 
 /*IAMGENS */
 body {
@@ -173,7 +170,7 @@ body {
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0,0,0,0.05);
-  border-left: 6px solid #ffcd00;
+  border-left: 6px solid #192230;;
 }
 
 .termos h1 {
@@ -184,7 +181,7 @@ body {
 
 .termos h3 {
   font-size: 22px;
-  color: #f96d00;
+  color: #192230;;
   margin-top: 20px;
   display: flex;
   align-items: center;
@@ -266,32 +263,11 @@ body {
 }
 
 .logos-grid img {
-  max-width: 160px;
+  max-width: 130px;
   padding: 20px;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*parte final*/
 
@@ -370,7 +346,7 @@ body {
   width: 150px;
 
   position: absolute;
-  top: 4140px;
+  top: 4355px;
   /*deixa a imagem livre para ser movida */
   left: 70px;
   /*deixa um espaco entre a esquerda*/
@@ -417,4 +393,134 @@ body {
 .social-icons a {
   color: #ffcd00;
   font-size: 1.4rem;
+}
+
+/* =============================
+   RESPONSIVIDADE GERAL
+   ============================= */
+@media (max-width: 1024px) {
+  /* Reduz espaçamentos e adapta menus */
+  .bottom-section {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+ .menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .menu ul li:not(:last-child)::after {
+    display: none; /* Remove as divisórias no menu */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Reduz padding geral da newsletter e header */
+  .newsletter {
+    padding: 40px 15px;
+    text-align: center;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter-form input {
+    max-width: 100%;
+  }
+
+  .newsletter-form button {
+    width: 100%;
+  }
+
+  /* Rodapé em coluna */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .footer-logo img {
+    position: static; /* Corrige a imagem para não sair do layout */
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Títulos e textos menores */
+  .bottom-section {
+    padding: 10px;
+  }
+
+  .menu a {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+
+  .termos {
+    margin: 20px 15px;
+    padding: 20px;
+  }
+
+  .termos h1 {
+    font-size: 22px;
+  }
+
+  .termos h3 {
+    font-size: 18px;
+  }
+
+  .termos p,
+  .termos li {
+    font-size: 14px;
+  }
+
+  .iniciativas {
+    padding: 40px 20px;
+  }
+
+  .iniciativas h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .logos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  /* Últimos ajustes para telas muito pequenas */
+  .newsletter h2 {
+    font-size: 1.5rem;
+  }
+
+  .newsletter p {
+    font-size: 1rem;
+  }
+
+  .newsletter-form button {
+    padding: 10px 20px;
+  }
+
+  .menu a {
+    font-size: 13px;
+  }
+
+  .termos h1 {
+    font-size: 20px;
+  }
 }

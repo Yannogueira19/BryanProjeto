@@ -178,7 +178,6 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   transition: transform 0.3s ease;
 }
-
 .noticia-card:hover {
   transform: translateY(-3px);
 }
@@ -190,28 +189,22 @@ body {
   border-radius: 8px;
   flex-shrink: 0;
 }
-
 .noticia-card a {
   text-decoration: none;
   color: inherit;
   display: block;
 }
-
 .noticia-card h3 {
-  
-    
   font-size: 20px;
   font-weight: bold;
   color: #3d474e;
   margin: 10px 0 10px 0;
 }
-
 .noticia-card p {
   font-size: 15px;
   color: #444;
   line-height: 1.5;
 }
-
 .tag {
   font-size: 12px;
   font-weight: bold;
@@ -221,9 +214,6 @@ body {
   border-radius: 5px;
   margin-bottom: 8px;
 }
-
-
-
 /* Responsivo: mobile */
 @media (max-width: 768px) {
   .noticia-card {
@@ -236,19 +226,6 @@ body {
     height: auto;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*daqui pra baixo é o final e iniciativas*/
 
@@ -282,10 +259,7 @@ body {
   border-bottom: 1px solid #eee;
 }
 
-
-
 /*parte final*/
-
 
 
 /* Newsletter laranja */
@@ -355,12 +329,12 @@ body {
 }
 
 .footer-logo img {
-  width: 100px;
+  width: 150px;
   position: absolute;
   /*deixa a imagem livre para ser movida */
-  left: 30px;
+  left: 75px;
   /*deixa um espaco entre a esquerda*/
-
+top: 3040px;
 }
 
 .footer-links {
@@ -403,4 +377,157 @@ body {
 .social-icons a {
   color: #ffcd00;
   font-size: 1.4rem;
+}
+
+/* ==========================
+   RESPONSIVIDADE COMPLETA
+========================== */
+
+/* Tablet e Notebooks pequenos */
+@media (max-width: 1024px) {
+  /* Cabeçalho */
+  .top-section {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  .bottom-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+   .menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* Notícias */
+  .noticia-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .noticia-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Logos */
+  .logos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  /* Newsletter */
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+  }
+
+  /* Rodapé */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-logo img {
+    position: static;
+    margin-bottom: 20px;
+  }
+}
+
+/* Celulares grandes e tablets pequenos */
+@media (max-width: 768px) {
+  /* Menu */
+  .menu a {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+
+  /* Notícias */
+  .noticia-card h3 {
+    font-size: 18px;
+  }
+
+  .noticia-card p {
+    font-size: 14px;
+  }
+
+  /* Logos */
+  .logos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  /* Newsletter */
+  .newsletter h2 {
+    font-size: 1.8rem;
+  }
+
+  .newsletter p {
+    font-size: 1rem;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  /* Rodapé */
+  .footer-links a {
+    font-size: 14px;
+  }
+
+  .footer-social h3 {
+    font-size: 16px;
+  }
+
+  .social-icons a {
+    font-size: 1.2rem;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  /* Notícias */
+  .noticia-card h3 {
+    font-size: 16px;
+  }
+
+  .noticia-card p {
+    font-size: 13px;
+  }
+
+  /* Logos */
+  .logos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Newsletter */
+  .newsletter h2 {
+    font-size: 1.5rem;
+  }
+
+  .newsletter p {
+    font-size: 0.9rem;
+  }
+
+  /* Rodapé */
+  .footer-links {
+    gap: 20px;
+  }
 }

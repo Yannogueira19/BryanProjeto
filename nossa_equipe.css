@@ -178,11 +178,6 @@
   color: #8DC63F;
 }
 
-
-
-
-
-
 /*teste*/
 
 /* Estilo para o banner */
@@ -251,12 +246,6 @@ body {
     line-height: 1.4;
     text-align: justify;
 }
-
-
-
-
-
-
 
 /*iniciaticas */
 
@@ -362,10 +351,10 @@ body {
   }
   
   .footer-logo img {
-    width: 100px;
+    width: 150px;
     position: absolute;/*deixa a imagem livre para ser movida */
-    left: 30px;/*deixa um espaco entre a esquerda*/
-    
+    left: 75px;/*deixa um espaco entre a esquerda*/
+    top: 2880px;
   }
   
   .footer-links {
@@ -410,4 +399,159 @@ body {
     font-size: 1.4rem;
   }
   
-  
+  /* ============================
+   RESPONSIVIDADE COMPLETA
+============================ */
+
+@media (max-width: 1024px) {
+  .top-section {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  .bottom-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+   .menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .menu1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner h1 {
+    font-size: 36px;
+    bottom: 60px;
+    left: 30px;
+    padding: 8px 16px;
+  }
+
+  .nossa-equipe {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .membro {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .logos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-logo img {
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner h1,
+  .banner2 h1 {
+    font-size: 28px;
+    bottom: 30px;
+    left: 20px;
+  }
+
+  .membro h3 {
+    font-size: 16px;
+  }
+
+  .membro p {
+    font-size: 13px;
+  }
+
+  .newsletter h2 {
+    font-size: 1.8rem;
+  }
+
+  .newsletter p {
+    font-size: 1rem;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+  }
+
+  .footer-social h3 {
+    font-size: 16px;
+  }
+
+  .social-icons a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner,
+  .banner2 {
+    height: 250px;
+  }
+
+  .banner h1,
+  .banner2 h1 {
+    font-size: 20px;
+    padding: 6px 12px;
+  }
+
+  .membro {
+    margin: 10px;
+  }
+
+  .newsletter h2 {
+    font-size: 1.5rem;
+  }
+
+  .newsletter p {
+    font-size: 0.9rem;
+  }
+
+  .logos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links {
+    gap: 20px;
+  }
+}

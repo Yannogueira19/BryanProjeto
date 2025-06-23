@@ -217,7 +217,7 @@ body {
   min-width: 300px;
   text-align: center;
 }
-
+/*faltou esse no slide*/
 .emprestimo-imagem img {
   max-width: 100%;
   height: auto;
@@ -242,7 +242,6 @@ body {
   padding: 20px;
   flex-wrap: wrap;
 }
-
 .simulacao-form-box {
   flex: 1;
   min-width: 300px;
@@ -251,14 +250,12 @@ body {
   border-radius: 8px;
   padding: 30px;
 }
-
 .simulacao-form-box h2 {
   font-size: 24px;
   margin-bottom: 20px;
   font-weight: 700;
   color: #2a2a2a;
 }
-
 form label {
   font-weight: 500;
   display: block;
@@ -324,13 +321,11 @@ form button {
   color: #555;
   margin-bottom: 30px;
 }
-
 .beneficios-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px 50px;
 }
-
 .beneficio-item img {
   background-color: #eaf7fd;
   border-radius: 50%;
@@ -339,7 +334,6 @@ form button {
   height: 55px;
   margin-bottom: 10px;
 }
-
 .beneficio-item h3 {
   font-size: 16px;
   font-weight: 700;
@@ -464,12 +458,12 @@ body {
 }
 
 .footer-logo img {
-  width: 100px;
+  width: 150px;
   position: absolute;
   /*deixa a imagem livre para ser movida */
-  left: 30px;
+  left: 75px;
   /*deixa um espaco entre a esquerda*/
-
+  top: 2295px;
 }
 
 .footer-links {
@@ -512,4 +506,177 @@ body {
 .social-icons a {
   color: #ffcd00;
   font-size: 1.4rem;
+}
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+  .top-section {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  .bottom-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+    .menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .emprestimo-conteudo {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .emprestimo-texto,
+  .emprestimo-imagem {
+    max-width: 100%;
+  }
+
+  .simulacao-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .beneficios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .logos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-logo img {
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .footer-social h3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .emprestimo-texto h1 {
+    font-size: 32px;
+  }
+
+  .emprestimo-texto p {
+    font-size: 16px;
+  }
+
+  .btn-simular {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .simulacao-form-box h2,
+  .simulacao-beneficios h2 {
+    font-size: 20px;
+  }
+
+  .beneficio-item p {
+    font-size: 13px;
+  }
+
+  .iniciativas h2 {
+    font-size: 1.6rem;
+  }
+
+  .newsletter h2 {
+    font-size: 1.8rem;
+  }
+
+  .newsletter p {
+    font-size: 1rem;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+  }
+
+  .social-icons a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .emprestimo-texto h1 {
+    font-size: 24px;
+  }
+
+  .emprestimo-texto p,
+  .simulacao-beneficios .subtitulo,
+  .newsletter p {
+    font-size: 14px;
+  }
+
+  .simulacao-form-box,
+  .simulacao-beneficios {
+    padding: 20px;
+  }
+
+  .simulacao-beneficios h2 {
+    font-size: 18px;
+  }
+
+  .beneficio-item h3 {
+    font-size: 14px;
+  }
+
+  .beneficio-item p {
+    font-size: 12px;
+  }
+
+  .logos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter h2 {
+    font-size: 1.5rem;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .footer-social h3 {
+    font-size: 16px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
 }

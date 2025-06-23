@@ -1,3 +1,4 @@
+/* Reset e estilos gerais */
 * {
   margin: 0;
   padding: 0;
@@ -6,31 +7,25 @@
 
 body {
   font-family: Arial, sans-serif;
-;
+  background-color: #ffffff;
 }
 
+/* Topo e Cabeçalho */
 .top-bar {
-  /* serve para criar a parte laranja do cabeçalho*/
   background-color: #192230;
   width: 100%;
-  /* largura da parte laranja do cabecalho*/
 }
 
 .top-section {
-  /* define a parte de cima da barra, a parte, onde fica as redes sociais*/
   display: flex;
-  /* sereve para deixar q a outra ta mova os itens, sem ela não dá*/
   justify-content: flex-end;
   padding: 8px 20px 0 20px;
-  /* serve para colocar um espaço entre elas*/
 }
 
 .social-icons {
   display: flex;
   align-items: center;
-  /* alinha ao centro*/
   gap: 10px;
-  /* espaço entra as redes sociais*/
 }
 
 .social-icons i,
@@ -40,19 +35,14 @@ body {
 
 .lang {
   color: white;
-  /* a cor desse icones*/
   font-size: 14px;
-  /* tamanho da fonte desse icones*/
   margin-left: 5px;
-  /* da um espaço entre os icones de do pt e en*/
 }
 
 .search-icon i {
-  /* coloca o icone de pesquisa (lupa)*/
   color: #ffcd00;
   font-size: 16px;
   margin-left: 8px;
-  /* espaço a esqueda*/
 }
 
 .bottom-section {
@@ -66,16 +56,12 @@ body {
 
 .logo img {
   height: 50px;
-  /* tamanho do da imagem logo*/
 }
 
 .menu ul {
   display: flex;
-  /* sem esse diplay flex não da para mexer e movimentar o resto*/
   list-style: none;
-  /* deixa sem os pontos */
   gap: 20px;
-  /* coloca um espaço entre os menu*/
 }
 
 .menu ul li {
@@ -147,19 +133,7 @@ body {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
-
-/* daqui pra cima é o cabealho*/
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-}
-
+/* Carrossel */
 .carousel {
   position: relative;
   width: 100%;
@@ -196,7 +170,6 @@ body {
   display: inline-block;
   background-color: #ffcd00;
   color: #192230;
-
   font-size: 14px;
   padding: 4px 8px;
   margin-bottom: 10px;
@@ -211,7 +184,6 @@ body {
   font-size: 16px;
   background-color: #ffffff;
   color: #192230;
-
   padding: 10px;
   margin-top: 10px;
   display: inline-block;
@@ -238,10 +210,9 @@ body {
   right: 20px;
 }
 
-/* segundo carrocel principal*/
-
+/* Carrossel de membros */
 .carousel-members {
- background-color: #192230;
+  background-color: #192230;
   padding: 40px 20px;
   text-align: center;
   position: relative;
@@ -295,30 +266,13 @@ body {
   display: inline-block;
 }
 
-/* IMAGEM DO SEGUNDO CARROCEL*/
 .carousel-members img {
   height: 150px;
-  /* Aumente esse valor conforme necessário */
   width: auto;
-  /* Mantém a proporção da imagem */
   margin: 0 100px;
-  /* Espaçamento entre logos */
 }
 
-
-
-
-
-/*IAMGENS */
-
-
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-}
-
+/* Notícias */
 .noticias-section {
   display: flex;
   justify-content: center;
@@ -365,24 +319,13 @@ body {
   margin: 10px 0;
 }
 
-.noticia-card:nth-child(2) h3 {
-  color: #3d474e;
-}
-
-.noticia-card:nth-child(3) h3 {
-  color: #3d474e;
-}
-
 .noticia-card p {
   font-size: 16px;
   color: #444;
   line-height: 1.4em;
 }
 
-/*PARTE DE BAIXO*/
-
-
-
+/* Iniciativas */
 .iniciativas {
   padding: 60px 40px;
   background-color: #fff;
@@ -392,7 +335,6 @@ body {
 .iniciativas h2 {
   font-size: 2rem;
   color: #f5a300;
-  /* amarelo destaque */
   margin-bottom: 40px;
   text-align: left;
 }
@@ -412,16 +354,7 @@ body {
   border-bottom: 1px solid #eee;
 }
 
-
-
-/*parte final*/
-
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-/* Newsletter laranja */
+/* Newsletter */
 .newsletter {
   background: url('imagens/2.jpg') no-repeat center center;
   background-size: cover;
@@ -469,8 +402,7 @@ body {
   cursor: pointer;
 }
 
-
-/* Rodapé branco */
+/* Rodapé */
 .footer {
   padding: 40px 20px;
   background-color: #2c2f38;
@@ -488,12 +420,10 @@ body {
 }
 
 .footer-logo img {
-  width: 100px;
+  width: 150px;
   position: absolute;
-  /*deixa a imagem livre para ser movida */
-  left: 30px;
-  /*deixa um espaco entre a esquerda*/
-
+  left: 75px;
+  top: 3115px;
 }
 
 .footer-links {
@@ -536,4 +466,128 @@ body {
 .social-icons a {
   color: #ffcd00;
   font-size: 1.4rem;
+}
+
+/* ================= MEDIA QUERIES ================= */
+@media (max-width: 1024px) {
+  .bottom-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .carousel-text {
+    max-width: 80%;
+    left: 30px;
+    padding: 15px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo img {
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .bottom-section {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .carousel-text h2 {
+    font-size: 24px;
+  }
+
+  .carousel-text p {
+    font-size: 14px;
+  }
+
+  .carousel-text {
+    bottom: 40px;
+    left: 20px;
+    max-width: 90%;
+    padding: 12px;
+  }
+
+  .noticias-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .noticia-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .logos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .newsletter h2 {
+    font-size: 1.6rem;
+  }
+
+  .newsletter p {
+    font-size: 1rem;
+  }
+
+  .member-slide-track {
+    gap: 20px;
+  }
+
+  .carousel-members img {
+    height: 100px;
+    margin: 0 40px;
+  }
+
+  .footer-social h3 {
+    font-size: 1.1rem;
+  }
+
+  .social-icons a {
+    font-size: 1.2rem;
+  }
 }
